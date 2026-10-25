@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+#main {
+    width: 95%;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 25px;
+}
+
+#firstname,
+#lastname,
+#job,
+#company,
+#linkedin,
+#email {
+    flex: 1 1 30%;
+}
+
+#meet-selection,
+#other-text {
+    flex: 1 1 40%;
+}
+
+#comment-field,
+#mail-list {
+    flex: 1 1 100%;
+}
+
+#firstname,
+#lastname,
+#job,
+#company,
+#linkedin,
+#email,
+#meet-selection,
+#other-text,
+#comment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+}
+
+#submit-button {
+    align-self: flex-start;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+label{
+    font-weight: bold;
+}
+
+

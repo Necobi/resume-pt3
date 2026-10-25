@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles/resume-pt3.css">
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <h1>Contact Form</h1>
+        </div>
+        <form id="contact-form" action="#" method="get">
+            
+            <!-- First Name -->
+             <div id="firstname">
+            <label for="fname"> First Name</label>
+            <input type="text" id="fname" name="fname">
+            </div>
+
+            <!-- Last Name -->
+             <div id="lastname">
+            <label for="lname"> Last Name</label>
+            <input type="text" id="lname" name="lname">
+            </div>
+
+            <!-- Job Title -->
+             <div id="job">
+            <label for="job-title"> Job Title</label>
+            <input type="text" id="job-title" name="job-title">
+            </div>
+
+            <!-- Company -->
+             <div id="company">
+            <label for="company"> Company</label>
+            <input type="text" id="company" name="company">
+            </div>
+
+            <!-- LinkedIn  -->
+             <div id="linkedin">
+            <label for="linkedin"> LinkedIn URL</label>
+            <input type="text" id="linkedin" name="linkedin">
+            </div>
+
+            <!-- Email -->
+             <div id="email">
+            <label for="email"> Email Address</label>
+            <input type="text" id="email" name="email">
+            </div>
+
+            <!-- Meet? -->
+             <div id="meet-selection">
+            <label>How did we meet?</label>
+            <select id="meet" name="meet">
+                <option value="none"> --Please Select-- </option>
+                <option value="social-media">Social Media</option>
+                <option value="event">A Networking Event</option>
+                <option value="school">School</option>
+            </select>
+            </div>
+
+            <div id="other-text">
+            <label for="other"> Other (please specify)</label>
+            <input type="text" id="other" name="other">
+            </div>
+
+
+            <!-- Comment field -->
+             <div id="comment-field">
+                 <label for="comment">Message</label>
+                 <textarea rows="5" id="comment" name="comment"></textarea>
+            </div>
+
+                
+            <!-- mailing list -->
+             <div id="mail-list">
+             <label for="mailing-list">
+                <input type="checkbox" id="mailing-list" 
+                    name="mailing-list" value="yes">
+                   Please add me to your mailing lsit
+            </label>
+<br>
+            <!-- email format -->
+            <label>Choose an email format:</label>
+             <label for="html">
+                <input type="radio" id="html" name="method" value="html">
+                HTML
+            </label>
+
+             <label for="text">
+                <input type="radio" id="text" name="method" value="text">
+                Text
+            </label>
+            </div>
+
+            <br>
+            <!-- Order Button -->
+                <button type ="submit" id="submit-button">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
