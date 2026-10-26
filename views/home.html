@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="styles/resume-pt3.css">
+    <script src="js/contact.js" defer></script>
 </head>
 <body>
     <div id="main">
@@ -15,12 +16,14 @@
             
             <!-- First Name -->
              <div id="firstname">
+            <span class="err" id="err-fname">First Name is Required</span>
             <label for="fname"> First Name</label>
             <input type="text" id="fname" name="fname">
             </div>
 
             <!-- Last Name -->
              <div id="lastname">
+            <span class="err" id="err-lname">Last Name is Required</span>
             <label for="lname"> Last Name</label>
             <input type="text" id="lname" name="lname">
             </div>
@@ -38,19 +41,23 @@
             </div>
 
             <!-- LinkedIn  -->
-             <div id="linkedin">
+             <div id="linkedin-text">
+            <span class="err" id="err-linkedin">Please enter a valid LinkedIn profile URL</span>
             <label for="linkedin"> LinkedIn URL</label>
             <input type="text" id="linkedin" name="linkedin">
             </div>
 
             <!-- Email -->
-             <div id="email">
+             <div id="email-text">
+            <span class="err" id="err-email"> Email is required</span>
+            <span class ="err" id="err-emailsign">@ or . is required </span>
             <label for="email"> Email Address</label>
             <input type="text" id="email" name="email">
             </div>
 
             <!-- Meet? -->
              <div id="meet-selection">
+            <span class="err" id="err-meet">Please select an option</span>
             <label>How did we meet?</label>
             <select id="meet" name="meet">
                 <option value="none"> --Please Select-- </option>
@@ -74,25 +81,29 @@
 
                 
             <!-- mailing list -->
-             <div id="mail-list">
-             <label for="mailing-list">
-                <input type="checkbox" id="mailing-list" 
-                    name="mailing-list" value="yes">
-                   Please add me to your mailing lsit
-            </label>
+            <div id="mail-list">
+                <label for="mailing-list">
+                    <input type="checkbox" id="mailing-list" 
+                        name="mailing-list" value="yes">
+                    Please add me to your mailing lsit
+                </label>
+            
 <br>
             <!-- email format -->
-            <label>Choose an email format:</label>
-             <label for="html">
-                <input type="radio" id="html" name="method" value="html">
-                HTML
-            </label>
+             <div id="email-format">
+                <label>Choose an email format:</label>
+                <label for="html">
+                    <input type="radio" id="html" name="method" value="html">
+                    HTML
+                </label>
 
-             <label for="text">
-                <input type="radio" id="text" name="method" value="text">
-                Text
-            </label>
+                <label for="text">
+                    <input type="radio" id="text" name="method" value="text">
+                    Text
+                </label>
+                </div>
             </div>
+            
 
             <br>
             <!-- Order Button -->

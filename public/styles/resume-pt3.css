@@ -23,8 +23,8 @@
 #lastname,
 #job,
 #company,
-#linkedin,
-#email {
+#linkedin-text,
+#email-text {
     flex: 1 1 30%;
 }
 
@@ -42,8 +42,8 @@
 #lastname,
 #job,
 #company,
-#linkedin,
-#email,
+#linkedin-text,
+#email-text,
 #meet-selection,
 #other-text,
 #comment-field {
@@ -67,6 +67,12 @@ textarea {
 }
 label{
     font-weight: bold;
+}
+.err{
+    
+    color: darkred;
+    display: none;
+
 }
 
 
